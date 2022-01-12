@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GithubApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="something_wrong">Oops.. something went wrong</string>
+    <string name="no_data">Empty data</string>
+    <string name="profile">Profile</string>
+    <string name="name_febrian">Febrian</string>
+    <string name="email_febrian26022001_gmail_com">febrian26022001@gmail.com</string>
+    <string name="github_users">Github Users</string>
+    <string name="back">Back</string>
+    <string name="detail_user">Detail User</string>
+    <string name="organization">Organization</string>
+    <string name="location">Location</string>
+    <string name="repository">Repository</string>
+    <string name="follower">Follower</string>
+    <string name="following">Following</string>
+    <string name="repositories">Repositories</string>
+    <string name="remove_from_favorite">Remove from Favorite</string>
+    <string name="favorite_user">Favorite User</string>
+    <string name="add_to_favorite">Add to Favorite</string>
+    <string name="title_favorite">Favorite</string>
+</resources>
