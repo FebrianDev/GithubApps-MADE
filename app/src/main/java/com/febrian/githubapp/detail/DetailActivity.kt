@@ -49,20 +49,18 @@ class DetailActivity : AppCompatActivity() {
         })
     }
 
-    private fun showData(it: Github?) {
-        if (it != null) {
-            with(binding) {
-                name.text = it.name.toString()
-                username.text = it.username.toString()
-                organization.text = it.company.toString()
-                city.text = it.location.toString()
-                follower.text = it.follower.toString()
-                following.text = it.following.toString()
-                val repositories = resources.getString(R.string.repositories)
-                repo.text = "${it.repository} $repositories"
-                Glide.with(applicationContext).load(it.avatar.toString())
-                    .error(R.drawable.ic_baseline_broken_image_24).into(img)
-            }
+    private fun showData(data: Github?) {
+        if (data != null) {
+            binding.name.text = data.name.toString()
+            binding.username.text = data.username.toString()
+            binding.organization.text = data.company.toString()
+            binding.city.text = data.location.toString()
+            binding.follower.text = data.follower.toString()
+            binding.following.text = data.following.toString()
+            val repositories = resources.getString(R.string.repositories)
+            binding.repo.text = "${data.repository} $repositories"
+            Glide.with(applicationContext).load(data.avatar.toString())
+                .error(R.drawable.ic_baseline_broken_image_24).into(binding.img)
         }
     }
 

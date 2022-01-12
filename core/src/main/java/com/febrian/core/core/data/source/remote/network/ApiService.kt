@@ -8,13 +8,13 @@ import retrofit2.http.Headers
 import retrofit2.http.Path
 
 interface ApiService {
-    @GET("/users")
-    @Headers("Authorization: token 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")
-    fun getUsers(): Flowable<ArrayList<ListGithubResponse>>
-
     @GET("/users/{username}")
-    @Headers("Authorization: token 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")
+    @Headers("Authorization: token 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")
     fun getDetailUser(
         @Path("username") username: String
     ): Flowable<GithubResponse>
+
+    @GET("/users")
+    @Headers("Authorization: token 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")
+    fun getUsers(): Flowable<ArrayList<ListGithubResponse>>
 }
